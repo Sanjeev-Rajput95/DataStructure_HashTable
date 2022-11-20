@@ -32,15 +32,12 @@
                 Console.WriteLine($"{i} index value : {hash.Get(i)}");
             }
 
-            Console.WriteLine("\nFrequency of Words ==> ");
+            hash.Remove(14);
 
-            string[] arr = new string[hash.size];
-            for (int i = 0; i < hash.size; i++)
+            for(int i = 0; i < hash.size; i++)
             {
-                arr[i] = hash.Get(i);
+                Console.WriteLine($"{i} index value : {hash.Get(i)}");
             }
-
-            hash.FreqOfWords(arr, arr.Length);
             Console.ReadLine();
         }
     
